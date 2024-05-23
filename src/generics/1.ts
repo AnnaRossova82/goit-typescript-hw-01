@@ -1,4 +1,4 @@
- import axios, { AxiosResponse } from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 async function fetchData<T>(url: string): Promise<T> {
   try {
@@ -8,7 +8,7 @@ async function fetchData<T>(url: string): Promise<T> {
     throw new Error(`Error fetching from ${url}: ${error}`) as never;
   }
 }
-
+ 
 
 /* 
 import axios from 'axios';
